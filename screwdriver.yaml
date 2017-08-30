@@ -1,0 +1,36 @@
+platform: nodejs_app
+
+shared:
+  build_containers: [ node8 ]
+  publish_containers: [ node8 ]
+
+environments:
+  # Applies to all Environments
+  default:
+    notifications:
+      email: btsai@yahoo-inc.com
+    settings:
+          # Manhattan version to deploy to  2
+      manhattan_version: 2
+      PUBLISH_CHECK: policy
+      env.BROWSER_PROVIDER: sauce
+
+      # Identify the Athens Domain
+      domain: yby.btsai
+      # And MH2 Service Name
+      service_group: react-starter
+    steps:
+      publish:
+        specfile: $SOURCE_DIR/mh.yaml
+
+  component:
+    targets:
+      # Component deploys to BF1
+      mh2-corp-bf1:
+        target_size: 1
+  
+  pull-request:
+      targets:
+        mh2-corp-gq1:
+          target_size: 1
+          max_size: 1

@@ -1,0 +1,10 @@
+<testsuites>
+    <testsuite name="helloworld;green-light" tests="3" failures="0" skipped="0">
+        <testcase name="Given I have a CD pipeline" classname="helloworld;green-light" time="0.073037078">
+        </testcase>
+        <testcase name="When I run this test" classname="helloworld;green-light" time="0.000013502">
+        </testcase>
+        <testcase name="Then I can get an test passed" classname="helloworld;green-light" time="0.00140384">
+        </testcase>
+    </testsuite>
+</testsuites>

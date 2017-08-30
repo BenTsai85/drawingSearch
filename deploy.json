@@ -1,0 +1,16 @@
+{
+  "routes": [
+    {
+      "method": "get",
+      "route": "*"
+    },
+    {
+      "method": "post",
+      "route": "*"
+    },
+    {
+      "method": "put",
+      "route": "*"
+    }
+  ]
+}

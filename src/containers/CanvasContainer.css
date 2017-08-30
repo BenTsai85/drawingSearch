@@ -1,0 +1,1074 @@
+@font-face {
+  font-family: '華康秀風體';
+  src: url('../../statics/files/DFHsiu_Std_W3.ttf') format('truetype')
+} 
+
+.color {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  z-index: 10002;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.7;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+}
+
+.colorTitle {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 10001;
+}
+
+@media screen and (orientation: portrait) {
+  .btns {
+    width: 100vmin;
+    flex-direction: row;
+  }
+
+  .container {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+
+  .suggestion {
+    flex-direction: column;
+    width: 100vmin;
+    overflow-x: hidden;
+  }
+
+  .suggestionQuestion {
+    top: 50%;
+  }
+
+  .suggestionList {
+    flex-direction: column;
+    overflow-x: scroll;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex: 1 0 auto;
+  }
+
+  .suggestionItem {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+
+  .list {
+    top: 50%;
+    left: -15%;
+  }
+
+  .btn {
+    top: 50%;
+    transform: translate(0, -50%);
+    flex-direction: row;
+  }
+
+  .search {
+    right: 0;
+  }
+
+  .searchBtn {
+    right: 0;
+    transform: translate(-20%, -120%);
+  }
+
+
+  .shareFirst {
+    transform: translate(20%, -120%);
+  }
+
+  .shareSecond {
+    transform: translate(140%, -120%);
+  }
+
+  .shareThird {
+    transform: translate(260%, -120%);
+  }
+
+  .shareFourth {
+    transform: translate(380%, -120%);
+  }
+
+
+  .toolFirst {
+    transform: translate(-50%, -50%);
+    left: 50%;
+  }
+
+  .toolSecond {
+    transform: translate(-50%, 100%);
+    left: 50%;
+  }
+
+  .toolThird {
+    transform: translate(-50%, 210%);
+    left: 50%;
+  }
+
+  .toolFourth {
+    transform: translate(-50%, 320%);
+    left: 50%;
+  }
+
+  .toolFifth {
+    transform: translate(-50%, 430%);
+    left: 50%;
+  }
+
+  .toolSixth {
+    transform: translate(-50%, 540%);
+    left: 50%;
+  }
+
+  .toolSeventh {
+    transform: translate(-50%, 650%);
+    left: 50%;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .btns {
+    height: 100vmin; 
+    flex-direction: column;
+  }
+
+  .container {
+    flex-direction: row;
+  }
+
+
+  .suggestion {
+    flex-direction: column;
+    height: 100vmin;
+  }
+
+  .suggestionList {
+    flex-direction: row;
+    overflow-y: scroll;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .suggestionQuestion {
+    top: 50%;
+  }
+
+  .suggestionItem {
+    margin: auto;
+  }
+
+
+  .list {
+    left: 50%;
+    top: -15%;
+  }
+
+  .btn {
+    left: 50%;
+    transform: translate(-50%, 0);
+    flex-direction: column;
+  }
+
+  .searchBtn {
+    transform: translate(-120%, 20%);
+    top: 0;
+  }
+
+  .shareList {
+    bottom: 0;
+  }
+
+
+  .shareFirst {
+    transform: translate(-120%, 0%);
+  }
+
+  .shareSecond {
+    transform: translate(-120%, -120%);
+  }
+
+  .shareThird {
+    transform: translate(-120%, -240%);
+  }
+
+  .shareFourth {
+    transform: translate(-120%, -360%);
+  }
+
+
+  .toolFirst {
+    transform: translate(-50%, -50%);
+    top: 50%;
+  }
+
+  .toolSecond {
+    transform: translate(100%, -50%);
+    top: 50%;
+  }
+
+  .toolThird {
+    transform: translate(210%, -50%);
+    top: 50%;
+  }
+
+  .toolFourth {
+    transform: translate(320%, -50%);
+    top: 50%;
+  }
+
+  .toolFifth {
+    transform: translate(430%, -50%);
+    top: 50%;
+  }
+
+  .toolSixth {
+    transform: translate(540%, -50%);
+    top: 50%;
+  }
+
+  .toolSeventh {
+    transform: translate(650%, -50%);
+    top: 50%;
+  }
+}
+
+@media screen and (min-width: 500px) and (orientation: portrait), screen and (min-height: 500px) and (orientation: landscape) {
+  .btnCircle {
+    padding: 10px;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+  }
+
+  .largeBtnCircle {
+    padding: 15px;
+    font-size: 30px;
+    width: 75px;
+    height: 75px;
+    border-radius: 37.5px;
+  }
+
+  .btns {
+    flex: 1 0 50px;
+  }
+
+
+  .suggestionQuestion {
+    font-size: 40px;
+  }
+
+  .suggestionTitle {
+    font-size: 15px;
+  }
+
+  .suggestionItem {
+    height: 50px;
+    width: 50px;
+  }
+
+
+  .list {
+    flex: 3 0 150px;
+  }
+
+  .shareList {
+    width: 100px;
+    height: 100px;
+  }
+
+  .search {
+    width: 100px;
+    height: 100px;
+  }
+
+  .btn {
+    flex: 1 0 50px;
+  }
+
+  .svg {
+    padding: 13.3px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .largeBtn {
+    width: 75px;
+    height: 75px;
+    border: 1px solid #ccc;
+    border-radius: 37.5px;
+  }
+
+  .colorTitle {
+    font-size: 30px;
+  }
+
+  .gift {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+  }
+}
+
+@media screen and (max-width: 500px) and (orientation: portrait), screen and (max-height: 500px) and (orientation: landscape) {
+  .btnCircle {
+    padding: 7.5px;
+    font-size: 15px;
+    width: 37.5px;
+    height: 37.5px;
+    border-radius: 18.75px;
+  }
+
+  .largeBtnCircle {
+    padding: 10px;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+  }
+
+  .btns {
+    flex: 1 0 50px;
+  }
+
+
+  .suggestionQuestion {
+    font-size: 30px;
+  }
+
+  .suggestionTitle {
+    font-size: 11.75px;
+  }
+
+  .suggestionItem {
+    height: 37.5px;
+    width: 37.5px;
+  }
+
+
+  .list {
+    flex: 3 0 112.5px;
+  }
+
+  .shareList {
+    width: 75px;
+    height: 75px;
+  }
+
+  .search {
+    width: 75px;
+    height: 75px;
+  }
+
+  .btn {
+    flex: 1 0 37.5px;
+  }
+
+  .svg {
+    padding: 10px;
+    width: 37.5px;
+    height: 37.5px;
+  }
+
+  .largeBtn {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+  }
+
+  .colorTitle {
+    font-size: 22.5px;
+  }
+
+  .gift {
+    width: 37.5px;
+    height: 37.5px;
+    border-radius: 18.75px;
+  }
+}
+
+@media screen and (min-width: 500px) and (orientation: portrait) {
+  .suggestion {
+    flex: 2 0 100px;
+  }
+
+  .suggestionTitle {
+    padding: 15px;
+  }
+
+  .suggestionList {
+    height: 80px;
+  }
+
+  .btn {
+    height: 50px;
+  }
+}
+
+@media screen and (min-height: 500px) and (orientation: landscape) {
+  .suggestion {
+    flex: 2 0 150px;
+  }
+
+  .suggestionTitle {
+    padding: 20px;
+  }
+
+  .suggestionList {
+    width: 140px;
+  }
+
+  .btn {
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) and (orientation: portrait) {
+  .suggestion {
+    flex: 2 0 130px;
+  }
+
+  .suggestionTitle {
+    padding: 11.75px 15px 5px 15px;
+  }
+
+  .suggestionList {
+    height: 105px;
+  }
+
+  .btn {
+    height: 37.5px;
+  }
+}
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .suggestion {
+    flex: 2 0 117.5px;
+  }
+
+  .suggestionTitle {
+    padding: 15px;
+  }
+
+  .suggestionList {
+    width: 105px;
+  }
+
+  .btn {
+    width: 37.5px;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) {
+  body {
+    height: 628px;
+  }
+
+  .container {
+    height: 628px;
+  }
+
+  .list {
+    top: 30px;
+  }
+
+  .btn {
+    top: 30px;
+  }
+
+  .suggestionList {
+    flex: auto;
+  }
+
+  .suggestionItem {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .suggestionQuestion {
+    top: 76.33px;
+  }
+
+  .color {
+    top: 314px;
+  }
+
+  .background {
+    height: 628px;
+  }
+
+  .colorTitle {
+    top: 314px;
+  }
+}  
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) {
+  body {
+    height: 559px;
+  }
+
+  .container {
+    height: 559px;
+  }
+
+  .list {
+    top: 25px;
+  }
+
+  .btn {
+    top: 25px;
+  }
+
+  .suggestionList {
+    flex: auto;
+  }
+
+  .suggestionQuestion {
+    top: 66.33px;
+  }
+
+  .color {
+    top: 279.5px;
+  }
+
+  .background {
+    height: 559px;
+  }
+
+  .colorTitle {
+    top: 279.5px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) {
+  body {
+    height: 460px;
+  }
+
+  .container {
+    height: 460px;
+  }
+
+  .list {
+    top: 20px;
+  }
+
+  .btn {
+    top: 20px;
+  }
+
+  .suggestion {
+    flex: 2 0 95px;
+  }
+
+  .suggestionList {
+    flex: auto;
+  }
+
+  .suggestionQuestion {
+    top: 47.5px;
+  }
+
+  .btns {
+    flex: 1 0 45px;
+  }
+
+  .color {
+    top: 230px;
+  }
+
+  .background {
+    height: 460px;
+  }
+
+  .colorTitle {
+    top: 230px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (orientation: portrait) {
+  body {
+    height: 960px;
+  }
+
+  .container {
+    height: 960px;
+  }
+
+  .canvas {
+    position: relative;
+    left: 32px;
+  }
+
+  .list {
+    top: 40px;
+  }
+
+  .btn {
+    top: 40px;
+  }
+
+  .suggestionList {
+    flex: auto;
+  }
+
+  .suggestionQuestion {
+    top: 85.33px;
+  }
+
+  .color {
+    top: 480px;
+  }
+
+  .background {
+    height: 960px;
+  }
+
+  .colorTitle {
+    top: 480px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (orientation: landscape) {
+   body {
+     height: 704px;
+   }
+
+  .container {
+    height: 704px;
+  }
+
+  .btns {
+    height: 704px;
+  }
+
+  .suggestion {
+    height: 704px;
+  }
+
+  .color {
+    top: 352px;
+  }
+
+  .background {
+    height: 704px;
+  }
+
+  .colorTitle {
+    top: 352px;
+  }
+}
+
+
+
+
+
+.btnCircle {
+  text-align: center;
+  line-height: 1.42857143;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  border: 1px solid #ccc;
+  color: #333;
+  background-color: #fff;
+}
+
+.largeBtnCircle {
+  text-align: center;
+  line-height: 1.42857143;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  border: 1px solid #ccc;
+  color: #333;
+  background-color: #fff;
+}
+
+.container {
+  display: flex;
+}
+
+.btns {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  order: 1;
+  background: linear-gradient(254deg,#77eaff,#77c3ff);
+}
+
+.canvas {
+  order: 2;
+}
+
+
+
+
+
+.suggestion {
+  display: flex;
+  background: linear-gradient(254deg,#77eaff,#77c3ff);
+  order: 3;
+}
+
+.suggestionQuestion {
+  position: relative;
+  font-family: '華康秀風體', '微軟正黑體', 'Microsoft JhengHei',  Tahoma , Verdana , Arial , sans-serif;
+  transform: translate(0, -50%);
+  text-align: center;
+}
+
+.suggestionList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.suggestionTitle {
+  color: #666;
+  font-family: monospace;
+  flex-shrink: 0;
+}
+
+.suggestionItem {
+  z-index: 100;
+}
+
+
+
+
+
+.btnClicked {
+  color: #fff;
+  background-color: #333;
+}
+
+.btnNotAllowed {
+  color: #888;
+  border-color: #bbb;
+}
+
+.btnHung {
+  color: #fff;
+  background-color: #999;
+}
+
+.notShowed {
+  display: none;
+}
+
+.list {
+  position: relative;
+}
+
+.shareList {
+  position: absolute;
+  display: flex;
+}
+
+.search {
+  position: absolute;
+}
+
+.searchBtn {
+  position: absolute;
+} 
+
+.btn {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+
+.svg {
+  border-radius: 0px;
+  z-index: 2;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.doSVG {
+  position: absolute;
+  transform: translateY(-100%);
+}
+
+.gift {
+  border: 1px solid #ccc;
+}
+
+
+
+
+
+.dimgray {
+  background: dimgray;
+}
+
+.darkolivegreen {
+  background: darkolivegreen;
+}
+
+.sienna {
+  background: sienna;
+}
+
+.silver {
+  background: silver;
+}
+
+.saddlebrown {
+  background: saddlebrown;
+}
+
+.tan {
+  background: tan;
+}
+
+.black {
+  background: black;
+}
+
+.indianred {
+  background: indianred;
+}
+
+.shareFirst {
+  position: absolute;
+  z-index: 100;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.shareSecond {
+  position: absolute;
+  z-index: 90;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.shareThird {
+  position: absolute;
+  z-index: 80;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.shareFourth {
+  position: absolute;
+  z-index: 70;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.toolFirst {
+  position: absolute;
+  z-index: 100;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.toolSecond {
+  position: absolute;
+  z-index: 90;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.toolThird {
+  position: absolute;
+  z-index: 80;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.toolFourth {
+  position: absolute;
+  z-index: 70;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.toolFifth {
+  position: absolute;
+  z-index: 60;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.toolSixth {
+  position: absolute;
+  z-index: 50;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.toolSeventh {
+  position: absolute;
+  z-index: 40;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.colorFirst {
+  animation-name: colorFirst;
+}
+
+.colorSecond {
+  animation-name: colorSecond;
+}
+
+.colorThird {
+  animation-name: colorThird;
+}
+
+.colorFourth {
+  animation-name: colorFourth;
+}
+
+.colorFifth {
+  animation-name: colorFifth;
+}
+
+.colorSixth {
+  animation-name: colorSixth;
+}
+
+.colorSeventh {
+  animation-name: colorSeventh;
+}
+
+.colorEighth {
+  animation-name: colorEighth;
+}
+
+.colorNineth {
+  animation-name: colorNineth;
+}
+
+@keyframes colorFirst {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateY(-300%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(0deg) translateY(-300%);
+    opacity: 1;
+  }
+}
+
+@keyframes colorSecond {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateY(-300%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(40deg) translateY(-300%);
+    opacity: 1;
+  }
+}
+
+@keyframes colorThird {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateY(-300%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(80deg) translateY(-300%);
+    opacity: 1;
+  }
+}
+
+@keyframes colorFourth {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateY(-300%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(120deg) translateY(-300%);
+    opacity: 1;
+  }
+}
+
+@keyframes colorFifth {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateY(-300%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(160deg) translateY(-300%);
+    opacity: 1;
+  }
+}
+
+@keyframes colorSixth {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateY(-300%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(200deg) translateY(-300%);
+    opacity: 1;
+  }
+}
+
+@keyframes colorSeventh {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateY(-300%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(240deg) translateY(-300%);
+    opacity: 1;
+  }
+}
+
+@keyframes colorEighth {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateY(-300%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(280deg) translateY(-300%);
+    opacity: 1;
+  }
+}
+
+@keyframes colorNineth {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateY(-300%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(320deg) translateY(-300%);
+    opacity: 1;
+  }
+}

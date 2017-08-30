@@ -1,0 +1,12 @@
+name: yby.btsai/react-starter
+version: "1.0"
+
+build:
+  base: paas.ynodejs.mh2containers/v4-standard:3-STABLE
+  files:
+  - { from: ., to: /home/y/share/node/manhattan_app/, group: wheel }
+
+container:
+  requires:
+    - { type: container, name: "paas.manhattan/yca:1-STABLE", wait: true }
+    - { type: capability, name: "auth_token" }

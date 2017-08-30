@@ -1,0 +1,43 @@
+{
+  "id": "project name",
+  "viewports": [
+    {
+      "name": "phone",
+      "width": 320,
+      "height": 480
+    },
+    {
+      "name": "pc",
+      "width": 1024,
+      "height": 768
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Search",
+      "url": "http://localhost:3000/search/auction?p=iphone",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "form",
+        "ul"
+      ],
+      "readyEvent": null,
+      "delay": 3000,
+      "misMatchThreshold" : 1,
+      "requireSameDimensions" : false
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "statics/backstop/bitmaps_reference",
+    "bitmaps_test": "statics/backstop/bitmaps_test",
+    "casper_scripts": "statics/backstop/casper_scripts",
+    "html_report": "statics/backstop/.html_report",
+    "ci_report": "artifacts/test/backstop"
+  },
+  "casperFlags": [],
+  "engine": "phantomjs",
+  "report": ["CI"],
+  "debug": false
+}

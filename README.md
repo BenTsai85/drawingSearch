@@ -1,3 +1,3 @@
 # drawingSearch
 
-Go to README.pdf and see what's going on!
+Go to [README.pdf](https://github.com/BenTsai85/drawingSearch/blob/master/README.pdf) and see what's going on!
